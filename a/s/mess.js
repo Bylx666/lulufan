@@ -10,7 +10,7 @@ $("mess").onwheel = $("mess").onmousedown = $("mess").onmouseup = (e)=> e.stopPr
   window.addEventListener("beforeunload", ()=> localStorage&&localStorage.setItem("mess-name", ni.value));
 
   var len = 0;
-  fetch("http://localhost:800").then((v)=> v.json()).then((v)=> {
+  fetch("/api/mess").then((v)=> v.json()).then((v)=> {
 
     len = v.length;
     for(let c of v) {
@@ -30,7 +30,7 @@ $("mess").onwheel = $("mess").onmousedown = $("mess").onmouseup = (e)=> e.stopPr
     var _ni = String(ni.value);
     var _ti = String(ti.value);
     ti.value = "";
-    fetch("http://localhost:800", {
+    fetch("/api/mess", {
       method: "POST",
       body: JSON.stringify({
         "n": _ni,

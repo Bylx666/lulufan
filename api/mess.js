@@ -3,7 +3,7 @@ const mongo = new require('mongodb').MongoClient;
 const db = new mongo("mongodb+srv://adm:6ePzbwaJC2aQP9wb@cluster.hkdun.mongodb.net/cluster?retryWrites=true&w=majority");
 const mess = db.db("lulu").collection("mess");
 
-http.createServer((q,r)=> {
+module.exports = ((q,r)=> {
 
   r.setHeader("Access-Control-Allow-Origin", "http://localhost:8088");
   if(q.method==="POST") {
@@ -48,5 +48,5 @@ http.createServer((q,r)=> {
     });
   }
 
-}).listen(800);
+});
 
