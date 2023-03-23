@@ -46,7 +46,7 @@ $("start").onanimationend = ()=> $("start").style.display = "none";
 $("start").onclick = ()=> {
 
   $("start").className = "fadeout";
-  // voc.src = "/a/b/lol.mp3";
+  voc.src = "/a/b/lol.mp3";
   voc.play();
 
 };
