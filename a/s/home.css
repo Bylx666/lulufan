@@ -1,0 +1,71 @@
+#home > img {
+  position: absolute;
+  left: 80px;
+  top: 50px;
+  width: 180px;
+}
+#home-roma {
+  position: absolute;
+  left: 80px;
+  top: 200px;
+  width: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: code ,'Segoe UI', monospace;
+  font-size: 20px;
+  text-shadow: 1px 2px 3px #000;
+}
+#home-roma > span {
+  margin: 0;
+  height: 60px;
+  width: 45px;
+  text-align: center;
+  line-height: 60px;
+}
+#home > h1 {
+  font-family: hc ,'Segoe UI', sans-serif;
+  font-weight: normal;
+  position: absolute;
+  z-index: 2;
+  left: 120px;
+  top: 400px;
+  margin: 0;
+  font-size: 80px;
+  letter-spacing: 10px;
+  text-shadow: 1px 2px 3px #000;
+  line-height: 100px;
+  pointer-events: none;
+}
+#home-kanban > img {
+  position: absolute;
+  height: 80%;
+  right: 200px;
+  bottom: 0;
+}
+@keyframes danmuku {
+  0% {
+    right: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    right: 100%;
+    transform: translateX(0);
+  }
+}
+#home-dan {
+  position: absolute;
+  width: 100%;
+  left: 0;top: 0;
+  pointer-events: none;
+}
+#home-dan > p, #home-dan > img {
+  position: absolute;
+  margin: 0;
+  line-height: 50px;
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  animation: danmuku 10s linear;
+  white-space: nowrap;
+  height: 50px;
+}

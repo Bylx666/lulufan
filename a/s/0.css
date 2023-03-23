@@ -1,0 +1,157 @@
+@font-face {
+  font-family: icon;
+  src: url(/a/f/icon.woff);
+}
+@font-face {
+  font-family: code;
+  src: url(/a/f/code.woff);
+}
+@font-face {
+  font-family: hc;
+  src: url(/a/f/hc.woff);
+}
+
+[cursor="link"], a {
+  cursor: pointer;
+  text-decoration: none;
+}
+body {
+  --t1: #FECADC;
+  --t2: #B3E4EF;
+  --dark: #3335;
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+  font-family: hc, 'Segoe UI', sans-serif;
+}
+#bg {
+  z-index: -1;
+  position: fixed;
+  left: 0;top: 0;width: 100%;height: 100%;
+  background-image: linear-gradient(135deg, var(--t1), var(--t2));
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#canvas-cursor {
+  z-index: 120;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#start {
+  z-index: 120;
+  position: absolute;
+  left: 0;top: 0;width: 100%;height: 100%;
+  background-image: url(/a/p/start-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+#start.fadeout {
+  animation: fadeout 0.2s;
+}
+#start > p {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+  font-size: 40px;
+}
+
+body > nav {
+  z-index: 100;
+  position: fixed;
+  width: 100px;
+  right: 50px;
+  top: 0;
+  height: 100%;
+}
+body > nav > a > img {
+  position: absolute;
+  display: block;
+  margin: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px #888;
+  transition: box-shadow 0.2s;
+}
+body > nav > a > img:hover {
+  box-shadow: 1px 1px 2px #888;
+}
+body > nav > div {
+  position: relative;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  top: calc(20% + 50px);
+  text-shadow: 1px 2px 3px #888;
+  text-align: center;
+}
+body > nav > div > a {
+  flex-grow: 1;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+body > nav > div > a.act, body > nav > div > a:hover {
+  color: var(--t1);
+  text-shadow: 0px 1px 2px #888;
+}
+
+#canvas-live {
+  z-index: 90;
+  position: fixed;
+  right: -120px;
+  bottom: 0;
+  width: 426px;
+  height: 240px;
+  box-shadow: 0 0 3px #888;
+}
+
+main {
+  position: relative;
+  transition: top 0.5s;
+}
+main > div {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+main > div.fadeout {
+  animation: fadeout 0.5s;
+}
+main > div.fadein {
+  animation: fadein 0.5s;
+}
+
+

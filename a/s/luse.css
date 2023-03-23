@@ -1,0 +1,102 @@
+#canvas-luse {
+  z-index: 101;
+  position: absolute;
+  left: 50%;top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  box-shadow: 0 2px 2px #888;
+}
+
+#luse-menu {
+  z-index: 103;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: icon;
+  display: flex;
+  padding: 10px;
+  box-shadow: 0 0 3px #888;
+  text-shadow: 1px 1px 3px #888;
+  background-color: var(--t2);
+  border-radius: 10px;
+}
+#luse-menu > div {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  transition: color 0.5s;
+}
+#luse-menu > div:hover, #luse-menu > div:active {
+  color: var(--t1);
+}
+
+#luse-sett {
+  z-index: 102;
+  position: absolute;
+  left: 0;top: 0;
+  height: calc(100% - 80px);
+  width: 300px;
+  box-shadow: 0 0 3px #888;
+  transition: transform 0.5s;
+  background-color: var(--dark);
+  color: #fff;
+  overflow: hidden auto;
+  padding: 10px;
+  padding-bottom: 70px;
+}
+#luse-sett > h3 {
+  margin: 0;
+  padding: 5px;
+  font-weight: normal;
+  font-size: 30px;
+}
+#luse-sett > p {
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+}
+#luse-sett > input {
+  outline: none;
+  color: #fff;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ccc5;
+  transition: border 0.2s;
+  margin: 10px 20px;
+  font-size: 20px;
+  padding: 5px;
+  width: 250px;
+}
+#luse-sett > input:hover, #luse-sett > input:focus {
+  border-bottom: 1px solid var(--t1);
+}
+#luse-sett > div {
+  display: flex;
+}
+#luse-sett > div > span {
+  font-size: 20px;
+  line-height: 60px;
+  padding: 0 10px;
+}
+#luse-sett > div > kbd, #luse-sett > div > a {
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: #ccc5;
+  transition: background-color 0.2s;
+  box-shadow: 0 0 3px #888;
+  margin: 10px;
+  border-radius: 10px;
+}
+#luse-sett > div > kbd[cursor="link"]:hover, #luse-sett > div > a:hover, 
+#luse-sett > div > kbd.act, #luse-sett > div > a.act {
+  background-color: var(--t1);
+}
+#luse-sett > div > a > p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--t2);
+}

@@ -1,0 +1,64 @@
+bpm=170;
+maker=Subkey Charisma https://space.bilibili.com/525849858;
+name=祝福;
+artist=YOASOBI;
+vocalist=雫るる https://space.bilibili.com/387636363;
+[
+4->4分音符,2->2分音符,1->全音符,8->8分音符,16->16分音符,可以试试更变态的32
+数字的位置可以写特殊值0，代表让它不占位置，可以做到上下同步按。别用它写粪谱
+f->天上的代表f键,不填就是地面。想要雅观可以随便挑个不冲突的字母比如j当地面
+a->猫打击感轻,b->狗打击感重,d->double上下一起按的雨伞,h->hold长按的,g->gear齿轮...?
+一个怪要指定3个东西,音符分数(默认4),在天上还是地上(默认地上),怪的类型
+数字必须写第一位,其他顺序无要求。举例 2fa,,2a,2d,0ah,2
+在任何地方(不能在数字前面)插入"|"可以作为曲子开始点调试
+整个逗号内留空就会产生四分音符的空隙,只指定数字的话会留对应空隙
+此文件是根据分号和等号判断内容的,换行符无关紧要,按自己的喜好排版！使用方括号进行注释。
+]
+score=,[1 beat offset]
+2a,2af,4,4a,2bf,2a,2af,4,4a,2bf,[start 1-4]
+a,a,a,a,af,af,af,af,a,a,af,af,1hf,0hf,[5-8]
+8a,8a,8a,8,8a,8a,8a,8,8af,8af,8af,8,8a,8a,8a,8,[9-10]
+8a,8a,8a,8,8af,8af,8af,8,8a,8a,8a,8,8af,8af,8af,8,[11-12]
+8a,8a,8a,8,8a,8a,8a,8,8af,8af,8af,8,8a,8a,8a,8,[13-14]
+8a,8a,8a,8,8af,8af,8af,8,8a,8a,8a,8,2d,[15-16]
+a,a,af,af,a,a,af,af, a,a,af,af,a,a,8a,8af,8a,8a,[17-20]
+a,a,af,af,a,a,a,a, af,af,af,af,a,a,8a,8af,8a,8a,[21-24]
+a,a,af,af,a,a,af,af, a,a,af,af,a,a,8a,8af,8a,8a,[25-28]
+a,a,af,af,a,a,a,a, af,af,af,af,a,a,8a,8af,8a,8a,[29-32]
+8a,8a,8a,8a,8,8a,8a,8a,8,8af,8af,8af,8,8a,8a,8a,[33-34]
+8,8a,8a,8a,8,8af,8af,8af,8,8a,8a,8a,8,8af,8af,8af,[35-36]
+8,8a,8a,8a,8,8a,8a,8a,8,8af,8af,8af,8,8a,8a,8a,[37-38]
+8,8a,8a,8a,8,8af,8af,8af,2h,4h,4d,[39-40]
+4h,8,8af,4af,0h,4af,8af,8a,4, 8a,8a,8af,8af,[41-42 darekaga]
+4hf,8,8a,4a,0hf,4a,8a,8a,8af,8af, 8af,8a,8af,8a,[43-44]
+4h,8,8af,4af,0h,4af,8af,8a,4, 8a,8a,8af,8af,[45-46]
+4hf,8,8a,4a,0hf,4a,8a,8a,8af,8af, 8af,8a,8af,8a,[47-48]
+4h,8,8af,4af,0h,4af,8af,8a,4, 8af,8af,8a,8a,[49-50]
+hf,0hf,h,0h,hf,0hf,h,0h, hf,0hf,h,0h,hf,hf,[51-52]
+d,a,d,af,d,8a,8a,8af,8a,8af,8af,[53-54]
+8a,8a,8a,8,8a,8a,8a,8,8af,8af,8af,8,8a,8a,8a,8,[55-56]
+8a,8a,8a,8,8af,8af,8af,8,8a,8a,8a,8,8af,8af,8af,8,[57-58]
+8a,8a,8a,8,8a,8a,8a,8,8af,8af,8af,8,8a,8a,8a,8,[59-60]
+8a,8a,8a,8,8af,8af,8af,8, 8a,8a,8af,8a,8a,8af,8a,8af,[61-62]
+4h,4af,4af,4af,0h,4hf,4a,4a,4a,[63-64]
+4hf,8a,8af,8a,8af,hf,8a,8a,hf,af,a,[65-66]
+a,8af,8af,af,a,a,8af,8af,a,a,[67-68]
+8af,8a,8af,8a,8af,8a,8d,8d,8d,8, a,a,af,[69-70]
+8a,8a,8a,8a,8a,8gf,8a,8a, 8af,8af,8a,8af,8af,8g,8af,8a,[71-72]
+a,a,a,a,af,af,a,a,[73-74]
+8a,8a,8a,8a,8a,8gf,8a,8a, 8af,8af,8a,8af,8af,8g,8af,8a,[75-76]
+a,a,a,a,1h,0h,[77-78]
+2,a,a,a,4,2gf,2,af,af,af,4,2g,[79-82]
+2,a,a,a,4,2gf,2,af,af,af,a,af,a,[83-86]
+2h,4h,4d,[87-88]
+2a,8a,8af,a,a,a,8af,8a,8af,8a,[89-90]
+2h,0h,2hf,0hf,h,0h,hf,0hf,h,0h,hf,0hf,[91-92]
+2h,2h,1gf,2h,0h,2hf,0hf,4h,4h, 8a,8a,8af,8af,[93-96 darekaga]
+4hf,8,8a,4a,0hf,4a,8a,8a,8af,8af, 8af,8a,8af,8a,[97-98]
+4h,8,8af,4af,0h,4af,8af,8a,4, 8a,8a,8af,8af,[99-100]
+4hf,8,8a,4a,0hf,4a,8a,8a,8af,8af, 8af,8a,8af,8a, [101-102]
+4hf,8,8a,4a,0hf,4a,8a,8a,8af,8af, 8af,8a,8af,8a, [103-104]
+4h,8,8af,4af,0h,4af,8af,8a,4, 8af,8af,8a,8a,[105-106]
+hf,0hf,h,0h,hf,0hf,h,0h, hf,0hf,h,0h,hf,0hf,h,0h,[107-108]
+2hf,0hf,2b,b,8d,8d,8d,8d,8a,8af,1h,1,0h[109-end]
+;

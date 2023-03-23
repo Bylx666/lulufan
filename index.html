@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雫るる - kAwAii</title>
+  <link rel="shortcut icon" href="/a/p/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/a/s/0.css">
+  <link rel="stylesheet" href="/a/s/home.css">
+  <link rel="stylesheet" href="/a/s/music.css">
+  <link rel="stylesheet" href="/a/s/mess.css">
+  <link rel="stylesheet" href="/a/s/luse.css">
+  <link rel="stylesheet" href="/a/s/about.css">
+</head>
+<body>
+  <div id="bg"></div>
+  <canvas id="canvas-cursor"></canvas>
+  <div id="start" cursor="link" style="display: none;">
+    <p>请调大设备音量<br>点击任意位置进入</p>
+  </div>
+  <nav>
+    <a href="https://space.bilibili.com/387636363" target="_blank"><img cursor="link" src="/a/p/favicon.png" alt="favicon"></a>
+    <div id="nav-li"><a class="act">首页</a><a>曲目</a><a>留言</a><a>Lulu快跑</a><a>关于</a></div>
+  </nav>
+  <canvas id="canvas-live" cursor="link"></canvas>
+  <main id="pages" style="top: 0vh">
+    <div id="home">
+      <img src="/a/p/logo.png" alt="sizukululu">
+      <div id="home-roma">
+        <span>S</span><span>H</span><span>I</span><span></span><span>Z</span><span>U</span><span>K</span><span>U</span><span>L</span><span>U</span><span>L</span><span>U</span>
+      </div>
+      <h1>全能アイドル<br>雫るるちゃん</h1>
+      <div id="home-kanban"><img src="/a/p/kanban2.png" alt="kanban" cursor="link"></div>
+      <div id="home-dan"></div>
+    </div>
+    <div id="music">
+      <div id="music-cont">
+        <img src="">
+        <div id="music-cover">
+          <img cursor="link">
+          <div></div>
+          <canvas id="canvas-music"></canvas>
+          <canvas id="canvas-music-parti"></canvas>
+        </div>
+        <div id="music-progr" cursor="link"></div>
+      </div>
+      <div id="music-list"><p>天才Lulu在线弹唱</p><div></div></div>
+    </div>
+    <div>
+      <div id="mess">
+        <div>
+          <div><h3><input placeholder="Luu Name" cursor="link" maxlength="10" id="mess-name"><span class="dis" id="mess-butt" cursor="link">发送</span></h3><div><h3></h3><p><textarea cursor="link" placeholder="不是官方留言板哦，Lulu不会看得。" id="mess-text"></textarea></p></div></div>
+        </div>
+      </div>
+      <img id="mess-debu" src="/a/p/debu.png" cursor="link">
+    </div>
+    <div>
+      <canvas id="canvas-luse"></canvas>
+      <div id="luse-menu">
+        <div id="luse-pause" cursor="link">&#xe8c5;</div>
+        <div id="luse-reset" cursor="link">&#xe8e4;</div>
+        <div id="luse-set" cursor="link">&#xe887;</div>
+      </div>
+      <div id="luse-sett" style="transform: translateX(-100%);">
+        <h3>打击偏移</h3>
+        <p>调整打击判定的点位</p>
+        <input id="luse-sett-offset" cursor="link" value="120">
+        <h3>键位调整</h3>
+        <p>只能调上下。点击键位并按下要改成的键。</p>
+        <div id="luse-sett-key1"><span>下</span><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd><kbd>r</kbd></div>
+        <div id="luse-sett-key2"><span>上</span><kbd>f</kbd><kbd>d</kbd><kbd>s</kbd><kbd>u</kbd></div>
+        <div><span>暂停</span><kbd>SpaceBar</kbd></div>
+        <div><span>重开</span><kbd>Esc</kbd></div>
+        <h3>准度调整</h3>
+        <p>参数说明:[Great判定拍数偏移x10, Perfect判定拍数偏移x10]。该选项直接影响分数。</p>
+        <div id="luse-sett-perc"><a>标准<p>[5,2]</p></a><a class="act">严格<p>[4,1.5]</p></a><a>极严<p>[1,1]</p></a></div>
+        <h3>说明</h3>
+        <p>本游戏玩法来自Muse Dash,喜欢请支持原版。欢迎找我交流谱面设计。</p>
+      </div>
+    </div>
+    <div><div id="about-cont"><div id="about-flex"><img src="/a/p/about.webp" alt="lulu"><img src="/a/p/hsk.webp" alt="hsk6 pass"></div><div id="about-text">
+      <h3>关注Lulu</h3>
+      <p><ruby>雫<rt>nǎ</rt>る<rt>lu</rt>る<rt>lu</rt></ruby>是天才</p>
+      <p><a href="https://space.bilibili.com/387636363" target="_blank">关注她b站主页</a></p>
+      <p><a href="https://live.bilibili.com/21013446" target="_blank">关注她的直播间</a></p>
+      <p><a href="https://zh.moegirl.org.cn/%E9%9B%ABLulu" target="_blank">萌娘百科介绍</a></p>
+      <h3>作者 沙琪玛</h3>
+      <p>啥都会，但啥都干不好。是纯良单推。</p>
+      <p><a href="https://space.bilibili.com/525849858" target="_blank">b站主页</a></p>
+      <p>“唱跳国语五脏俱全 琴棋书画样样精通”</p>
+    </div></div></div>
+  </main>
+  <script src="/a/s/0.js"></script>
+  <script src="/a/s/home.js"></script>
+  <script src="/a/s/music.js"></script>
+  <script src="/a/s/mess.js"></script>
+  <script src="/a/s/luse.js"></script>
+</body>
+</html>

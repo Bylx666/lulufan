@@ -1,0 +1,10 @@
+var a = document.createElement("canvas");
+document.body.append(a);
+var b = a.getContext("2d");
+var c = document.createElement("img");
+document.body.append(c);
+c.style.cssText = "z-index:10000;position:fixed;width:160px;height:90px;right:20px;top:20px";
+a.height = 720;
+a.width = 1280;
+b.drawImage($0, 0, 0, 1280, 720);
+c.src = a.toDataURL();

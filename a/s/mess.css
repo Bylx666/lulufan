@@ -1,0 +1,125 @@
+#mess {
+  z-index: 91;
+  position: absolute;
+  left: 50%;top: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 500px;
+  background-color: var(--dark);
+  box-shadow: 0 2px 5px #888;
+  border-radius: 80px;
+  padding: 40px;
+}
+#mess > div {
+  overflow-y: auto;
+  height: 100%;
+}
+#mess > div::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  box-sizing: border-box;
+  border-radius: 80px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px #fff, 0 0 5px #fff inset;
+  pointer-events: none;
+  padding: 10px;
+}
+#mess > div > div {
+  position: relative;
+  border-radius: 30px;
+  margin: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 2px #555;
+}
+#mess > div > div > h3 {
+  margin: 0;
+  background-color: #F7F0D8;
+  height: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 5px 0 5px 80px;
+  font-weight: normal;
+  color: #555;
+}
+#mess > div > div > h3 > span {
+  background-color: #fff;
+  padding: 0 20px 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px #888;
+}
+#mess > div > div > h3 > address {
+  float: right;
+  font-family: code, monospace;
+  padding-right: 30px;
+}
+#mess > div > div:nth-child(2n-1) > h3 {
+  background-color: #D0EEFD;
+}
+#mess > div > div > div {
+  flex-grow: 1;
+}
+#mess > div > div > div > h3 {
+  position: absolute;
+  top: 15px;left: 15px;
+  width: 50px;height: 50px;
+  border-radius: 50%;
+  margin: 0;
+  background-image: linear-gradient(135deg, var(--t1), var(--t2));
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 1px #888;
+  line-height: 45px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 27px;
+}
+#mess > div > div > div > p {
+  margin: 0;
+  padding: 5px 5px 5px 80px;
+  font-size: 20px;
+  line-height: 30px;
+  word-wrap: break-word;
+  white-space: pre;
+}
+#mess > div > div:first-child > div > h3 {
+  background-image: url(/a/p/head.webp);
+  background-size: cover;
+}
+#mess > div > div > h3 > #mess-butt {
+  background-color: #555;
+  color: #fff;
+  transition: opacity 0.2s;
+}
+#mess-butt:hover, #mess-butt.dis {
+  opacity: 0.5;
+}
+#mess-name, #mess-text {
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 10px;
+  height: 24px;
+  width: 210px;
+  margin-right: 10px;
+  box-shadow: 0 0 3px #888;
+  color: #555;
+  font-size: 18px;
+  font-family: hc, 'Segoe UI', sans-serif;
+}
+#mess-text {
+  width: 300px;
+  resize: none;
+  height: 120px;
+  padding: 5px;
+}
+
+#mess-debu {
+  position: absolute;
+  left: 0;bottom: 0;
+  height: 150px;
+}

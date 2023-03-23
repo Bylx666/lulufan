@@ -1,0 +1,43 @@
+#about-cont {
+  position: absolute;
+  left: 50%;top: 50%;
+  transform: translate(-50%, -50%);
+}
+#about-flex {
+  display: flex;
+}
+#about-flex > img {
+  height: 240px;
+  width: 240px;
+  object-fit: cover;
+  object-position: center;
+  margin: 5px;
+  box-shadow: 1px 2px 3px #888;
+}
+#about-text {
+  width: 480px;
+  height: 300px;
+  background-color: #333;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 1px 2px 3px #888;
+  color: #fff;
+}
+#about-text > h3 {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 24px;
+}
+#about-text > p {
+  margin: 3px 5px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+#about-text > p > a {
+  color: var(--t2);
+  transition: color 0.5s;
+}
+#about-text > p > a:hover {
+  color: var(--t1);
+}
