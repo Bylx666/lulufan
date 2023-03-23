@@ -24,6 +24,9 @@ body {
   user-select: none;
   font-family: hc, 'Segoe UI', sans-serif;
 }
+kbd {
+  font-family: code, monospace;
+}
 #bg {
   z-index: -1;
   position: fixed;

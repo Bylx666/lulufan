@@ -64,7 +64,7 @@ $("mess").onwheel = $("mess").onmousedown = $("mess").onmouseup = (e)=> e.stopPr
 
 $("mess-debu").onclick = ()=> {
   
-  voc.src = "/a/b/duidui.mp3";
+  voc.src = "/a/b/lol.mp3";
   voc.play();
   
 };

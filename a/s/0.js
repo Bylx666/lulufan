@@ -42,14 +42,6 @@ var $ = (e)=> document.getElementById(e);
 })();
 
 var voc = new Audio();
-$("start").onanimationend = ()=> $("start").style.display = "none";
-$("start").onclick = ()=> {
-
-  $("start").className = "fadeout";
-  voc.src = "/a/b/lol.mp3";
-  voc.play();
-
-};
 
 // live2d
 (()=> {
