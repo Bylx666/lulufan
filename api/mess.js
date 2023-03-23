@@ -1,6 +1,5 @@
-const http = require('http');
-const mongo = new require('mongodb').MongoClient;
-const db = new mongo("mongodb+srv://adm:6ePzbwaJC2aQP9wb@cluster.hkdun.mongodb.net/cluster?retryWrites=true&w=majority");
+const { MongoClient } = require('mongodb');
+const db = new MongoClient("mongodb+srv://adm:6ePzbwaJC2aQP9wb@cluster.hkdun.mongodb.net/cluster?retryWrites=true&w=majority");
 const mess = db.db("lulu").collection("mess");
 
 module.exports = ((q,r)=> {
